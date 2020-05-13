@@ -6,7 +6,7 @@ var hasStarted = false;
 var level = 0;
 
 
-$(document).onmousedown(function() {
+$("body").mousedown(function() {
   if (!hasStarted) {
     $("#level-title").text("Level " + level);
     nextSequence();
@@ -63,7 +63,7 @@ function gameOver(){
   setTimeout(function(){
     $("body").removeClass("game-over");
   },200);
-  $("h1").text("Press A Key to Start");
+  $("h1").text("Press anywhere to Start");
   startOver();
 
 }
