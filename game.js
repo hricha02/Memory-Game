@@ -6,7 +6,7 @@ var hasStarted = false;
 var level = 0;
 
 
-$(document).keydown(function() {
+$(document).onmousedown(function() {
   if (!hasStarted) {
     $("#level-title").text("Level " + level);
     nextSequence();
