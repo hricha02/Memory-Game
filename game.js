@@ -63,7 +63,7 @@ function gameOver(){
   setTimeout(function(){
     $("body").removeClass("game-over");
   },200);
-  $("h1").text("Press anywhere to Start");
+  $("h1").text("Click anywhere to Start");
   startOver();
 
 }
